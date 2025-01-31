@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HamNava Dataset | PeMPLab</title>
+    
+        <!-- Add Bootstrap CSS CDN Link Here -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+        <link rel="stylesheet" href="../../assets/css/style.css"> <!-- Link to your custom CSS file -->
+        <script type="text/javascript" src="../../assets/js/script.js" defer></script> <!-- Link to your custom JS file -->
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">
+                <!--img src="mnt/data/logo.jfif" alt="PeMPLab Logo"--> PeMPLab
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    
+        <!-- HamNava Dataset Page Content -->
+        <div class="container content-section">
+            <h2>HamNava Dataset</h2>
+            <p>The <strong>HamNava Dataset</strong> is an important resource for Multi-Instrument Recognition in Persian Traditional Music. It consists of 6,000 5-second audio excerpts annotated for the presence of 9 core instruments in Persian traditional music.</p>
+    
+            <p>If you are interested in using this dataset for your research, please submit the request form below. By requesting access, you agree to use the data only for academic and research purposes.</p>
+    
+            <p>For more details, you can read the original paper here: <a href="https://link2paper.com" target="_blank">HamNava Paper</a>.</p>
+            
+            <h3>How to Request Access:</h3>
+            <p>You can request access via filing out the<a href="https://forms.gle/your-google-form-link" target="_blank" class="btn btn-link">Google Form</a>(Prefered), completing the below form, or email directly. Please fill in the necessary information and agree to the terms before submitting.</p>
+        
+    
+            <!-- Request Form -->
+            <form action="mailto:mohseni0pouya@gmail.com?subject=HamNava Dataset Request" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Institutional Email Address:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="research">Research Area:</label>
+                    <input type="text" class="form-control" id="research" name="research" required>
+                </div>
+                <div class="form-group">
+                    <label for="affiliation">Institution/Organization:</label>
+                    <input type="text" class="form-control" id="affiliation" name="affiliation" required>
+                </div>
+                <div class="form-group">
+                    <label for="note">Note:</label>
+                    <textarea type="text" class="form-control" id="note"  rows="2" name="note"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="agreement">Agreement:</label>
+                    <textarea class="form-control" id="agreement" rows="3" readonly>This dataset will only be used for academic and research purposes. By submitting this request, you agree to this condition.</textarea>
+                </div>
+                <button type="submit" class="btn btn-custom">Submit Request</button>
+            </form>
+    
+            <p class="mt-4">If above unavailable, you can request the dataset via email by sending afformnetioned details and agreeing to use it only for research purposes.
+            With the subject <strong>HamNava Dataset Request</strong> send the email to <strong>mohseni0pouya\at\gmail\dot\com</strong> CC'ing <strong>babaali\at\ut\dot\ac\dot\ir.</strong></p>
+    
+        </div>
+    
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 PeMPLab | Persian Music Processing Lab</p>
+        </div>
+    
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>

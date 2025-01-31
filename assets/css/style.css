@@ -1,0 +1,72 @@
+/* Base colors */
+:root {
+    --telemagenta: #D43875ff;
+    --jet: #3E3837ff;
+    --misty-rose: #FADDD5ff;
+}
+
+body {
+    background-color: var(--misty-rose);
+    color: var(--jet);
+}
+
+.navbar {
+    background-color: var(--telemagenta);
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+}
+
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section h2 {
+    color: var(--telemagenta);
+}
+
+.content-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.content-section ul li {
+    padding: 10px 0;
+}
+
+.footer {
+    background-color: var(--telemagenta);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn-custom {
+    background-color: var(--telemagenta);
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #ad1c50;
+}
+
+/* Hamburger menu */
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: var(--telemagenta);
+    }
+}
+
+/* Links styling */
+a {
+    color: var(--telemagenta);
+}
