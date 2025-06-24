@@ -3,56 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HamNava Dataset | PeMPLab</title>
+        <title>Navaa Lab | HamNava Dataset</title>
     
         <!-- Add Bootstrap CSS CDN Link Here -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     
-        <link rel="stylesheet" href="../../assets/css/style.css"> <!-- Link to your custom CSS file -->
-        <script type="text/javascript" src="../../assets/js/script.js" defer></script> <!-- Link to your custom JS file -->
+        <link rel="stylesheet" href="/assets/css/style.css"> <!-- Link to your custom CSS file -->
+        <script type="text/javascript" src="/assets/js/script.js" defer></script> <!-- Link to your custom JS file -->
     </head>
     <body>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#">
-                <!--img src="mnt/data/logo.jfif" alt="PeMPLab Logo"--> PeMPLab
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div id="header"></div>
     
         <!-- HamNava Dataset Page Content -->
         <div class="container content-section">
             <h2>HamNava Dataset</h2>
-            <p>The <strong>HamNava Dataset</strong> is an important resource for Multi-Instrument Recognition in Persian Traditional Music. It consists of 6,000 5-second audio excerpts annotated for the presence of 9 core instruments in Persian traditional music.</p>
-    
-            <p>If you are interested in using this dataset for your research, please submit the request form below. By requesting access, you agree to use the data only for academic and research purposes.</p>
-    
-            <p>For more details, you can read the original paper here: <a href="https://link2paper.com" target="_blank">HamNava Paper</a>.</p>
-            
+            <p>The <strong>HamNava Dataset</strong> is a valuable resource for multi-instrument recognition in Persian traditional music. It consists of 6,000 five-second audio excerpts, each annotated for the presence of 9 core instruments in this genre.</p>
+            <p>If you are interested in using this dataset for your research, please submit the request form below. By requesting access, you agree to use the data exclusively for academic and research purposes.</p>
+            <p>You can download a <strong>sample portion of the dataset</strong> from 
+            <a href="/resources/dataset/download/hamnava/sample.zip" target="_blank">here</a>.  
+            Please refer to the included <code>README</code> file from 
+            <a href="/resources/dataset/download/hamnava/README.md" target="_blank">here</a> for details on the dataset format, labels, and usage instructions. </p>
+            <p>For the complete methodology and background, see the original paper:  
+            <a href="https://link2paper.com" target="_blank">HamNava Paper</a>.</p>
             <h3>How to Request Access:</h3>
-            <p>You can request access via filing out the<a href="https://forms.gle/your-google-form-link" target="_blank" class="btn btn-link">Google Form</a>(Prefered), completing the below form, or email directly. Please fill in the necessary information and agree to the terms before submitting.</p>
+            <p>You can request access via filing out the<a href="https://forms.gle/rtrg26eK9cS4zRpR8" target="_blank" class="btn btn-link">Google Form</a>(Prefered), completing the below form, or email directly. Please fill in the necessary information and agree to the terms before submitting.</p>
         
     
             <!-- Request Form -->
@@ -66,20 +41,20 @@
                     <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="research">Research Area:</label>
+                    <label for="research">Purpose of Use:</label>
                     <input type="text" class="form-control" id="research" name="research" required>
                 </div>
                 <div class="form-group">
-                    <label for="affiliation">Institution/Organization:</label>
+                    <label for="affiliation">Affiliated Institution / Organization:</label>
                     <input type="text" class="form-control" id="affiliation" name="affiliation" required>
                 </div>
                 <div class="form-group">
-                    <label for="note">Note:</label>
+                    <label for="note">Additional Notes:</label>
                     <textarea type="text" class="form-control" id="note"  rows="2" name="note"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="agreement">Agreement:</label>
-                    <textarea class="form-control" id="agreement" rows="3" readonly>This dataset will only be used for academic and research purposes. By submitting this request, you agree to this condition.</textarea>
+                    <textarea class="form-control" id="agreement" rows="3" readonly>By submitting this request, you confirm that the dataset will be used solely for academic or research purposes. You agree not to use it for any commercial or non-research activities.</textarea>
                 </div>
                 <button type="submit" class="btn btn-custom">Submit Request</button>
             </form>
@@ -89,14 +64,26 @@
     
         </div>
     
-        <!-- Footer -->
-        <div class="footer">
-            <p>&copy; 2025 PeMPLab | Persian Music Processing Lab</p>
-        </div>
-    
-        <!-- Bootstrap JS and dependencies -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
+        <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function loadHTML(id, file) {
+      fetch(file)
+        .then((response) => {
+          if (!response.ok) throw new Error("Failed to load " + file);
+          return response.text();
+        })
+        .then((data) => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch((err) => console.error(err));
+    }
+
+    loadHTML("header", "/assets/template/header.html");
+    loadHTML("footer", "/assets/template/footer.html");
+  </script>
 </html>

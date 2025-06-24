@@ -3,59 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeMPLab | Homepage</title>
+    <title>Navaa Lab | Homepage</title>
     <!-- Add Bootstrap CSS CDN Link Here -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css"> <!-- Link to your custom CSS file -->
 </head>
-<body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html">
-            <!--img src="assets/images/logo.jfif" alt="PeMPLab Logo"--> PeMPLab
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Research</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Publications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<body>
+    <div id="header"></div>
 
     <div class="container content-section">
-        <h2>Welcome to PeMPLab</h2>
-        <p>This is the homepage of the **Persian Music Processing Lab (PeMPLab)**</p>
+        <h2>Welcome to Navaa Lab</h2>
+        <p>This is the homepage of <strong>Navaa Lab</strong> – <em>iraNiAn music retrieVal & Analysis</em></p>
 
-        <p>Navigate through pages:</p>
+        <p><strong>Navaa Lab</strong> is dedicated to the exploration, analysis, and computational modeling of <strong>Iranian music</strong>. We specialize in <strong>Music Information Retrieval (MIR)</strong> techniques tailored to the unique characteristics of Iran’s rich musical heritage.</p>
+
+        <p>Our mission is to:</p>
         <ul>
-            <li><a href="resources/dataset/hamnava.html">HamNava Dataset</a></li>
-            <li><a href="resources/dataset/nava.html">Nava Dataset</a></li>
+            <li>Develop and publish open datasets on Iranian music</li>
+            <li>Propose models and tools that respect and understand the nuances of Iranian music theory and performance</li>
+            <li>Foster reproducible research in underrepresented musical traditions</li>
         </ul>
+
+        <p><strong>What We Do:</strong></p>
+        <ul>
+            <li>Music analysis using MIR techniques</li>
+            <li>Dataset curation and annotation</li>
+            <li>Cross-cultural computational musicology</li>
+            <li>Research publications and software tools</li>
+            <li>Promotion of open, inclusive research in regional music traditions</li>
+        </ul>
+
+        <p><strong>Featured Resources:</strong></p>
+        <ul>
+            <li></li>
+        </ul>
+
+        <p>We welcome collaborations across disciplines — musicologists, engineers, artists, and beyond. Interested in contributing or using our work in your research? <a href="mailto:contact@navaa.ir">Get in touch</a>.</p>
     </div>
 
-    <div class="footer">
-        <p>&copy; 2025 PeMPLab | Persian Music Processing Lab</p>
-    </div>
+    <div id="footer"></div>
 
-    <!-- Add Bootstrap JS and Popper.js CDN Links before closing body tag -->
+    <!-- Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include Header and Footer -->
+    <script>
+        function loadHTML(id, file) {
+            fetch(file)
+                .then(response => {
+                    if (!response.ok) throw new Error('Failed to load ' + file);
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(err => console.error(err));
+        }
+
+        loadHTML("header", "/assets/template/header.html");
+        loadHTML("footer", "assets/template/footer.html");
+    </script>
 </body>
-</html>

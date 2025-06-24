@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Navaa Lab</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="/assets/css/style.css"/>
+</head>
+<body>
+
+  <div id="header"></div>
+
+  <div class="container content-section mt-5">
+    <h2>Contact</h2>
+    <p>If you would like to collaborate or learn more about our research, feel free to get in touch.</p>
+
+    <div class="card mt-4">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Bagher BabaAli</h5>
+        <p class="card-text">
+          <strong>Position:</strong> Principal Investigator<br>
+          <strong>Email:</strong> <a>babaali\at\ut\dot\ac\dot\ir</a><br>
+          <strong>Affiliation:</strong> <a href="https://profile.ut.ac.ir/en/~babaali/courses" target="_blank">Computer Science Department, University of Tehran</a><br>
+          <strong>Homepage:</strong> <a href="https://www.researchgate.net/scientific-contributions/Bagher-BabaAli-74939400" target="_blank">Research Gate</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="card mt-4">
+      <div class="card-body">
+        <h5 class="card-title">Pouya Mohseni</h5>
+        <p class="card-text">
+          <strong>Position:</strong> Contributor<br>
+          <strong>Email:</strong> <a>mohseni0pouya\at\gmail\dot\com</a><br>
+          <strong>Affiliation:</strong> <a href="https://cs.ut.ac.ir/en" target="_blank">Computer Science Department, University of Tehran</a><br>
+          <strong>Homepage:</strong> <a href="https://scholar.google.com/citations?user=McMwPKUAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </p>
+      </div>
+    </div>
+
+
+    
+  </div>
+
+  <div id="footer" class="mt-5"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    function loadHTML(id, file) {
+      return fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error('Failed to load ' + file);
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(err => console.error(err));
+    }
+
+    loadHTML("header", "/assets/template/header.html");
+    loadHTML("footer", "/assets/template/footer.html");
+  </script>
+
+</body>
+</html>

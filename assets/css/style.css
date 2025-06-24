@@ -1,8 +1,8 @@
 /* Base colors */
 :root {
-    --telemagenta: #D43875ff;
+    --telemagenta: #003049;
     --jet: #3E3837ff;
-    --misty-rose: #FADDD5ff;
+    --misty-rose: #fdf0d5;
 }
 
 body {
@@ -34,14 +34,7 @@ body {
     color: var(--telemagenta);
 }
 
-.content-section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
 
-.content-section ul li {
-    padding: 10px 0;
-}
 
 .footer {
     background-color: var(--telemagenta);
@@ -69,4 +62,15 @@ body {
 /* Links styling */
 a {
     color: var(--telemagenta);
+}
+
+
+.content-section ul {
+    margin: 1em 0;
+    padding-left: 3em; /* Indentation */
+    list-style-type: disc; /* Bullet points */
+}
+
+.content-section ul li {
+    margin-bottom: 0.5em;
 }
