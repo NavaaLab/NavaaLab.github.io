@@ -75,6 +75,11 @@ a {
     margin-bottom: 0.5em;
 }
 
-.btn.btn-link {
-  padding: 0.25rem 0.5rem; /* reduce top/bottom and left/right padding */
+.inline-link {
+  color: #0d6efd;        
+  text-decoration: none;  
+  cursor: pointer;
+}
+.inline-link:hover {
+  text-decoration: underline; 
 }
