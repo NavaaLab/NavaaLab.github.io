@@ -11,11 +11,16 @@
   - `train.csv`
   - `validation.csv`
   - `test.csv`
+  - `train_bin.csv`
+  - `validation_bin.csv`
+  - `test_bin.csv`
   - Each CSV includes:
     - `sample_id`
-    - Soft labels (floats between 0 and 1) for:
+    - Labels for:
       - `tar`, `setar`, `santur`, `oud`, `kamancheh`, `ney`, `tonbak`, `daf`, `vocal`
-    -  `difficulty`: a binary label indicating whether the excerpt is from an **easy (0)** or **hard (1)** track
+        - In soft-labeled files: values are floats between `0.0` and `1.0`
+        - In binarized (*_bin) files: values are `0` or `1`, based on a threshold of **0.5**
+    - `difficulty`: a binary label indicating whether the excerpt is from an **easy (0)** or **hard (1)** track
 
 ---
 
@@ -43,7 +48,7 @@ The main goal is **multi-label instrument classification** in short audio segmen
 ## 📈 Dataset Statistics
 
 - **6,000** 5-second audio excerpts
-- **60,000+** individual annotations
+- **60,000+** judgments
 - **1,800+** contributors (after filtering by ear-training proficiency)
 - Instruments:
   - **Strings**: Tar, Setar, Santur, Oud, Kamancheh  
@@ -69,13 +74,8 @@ A series of evaluations were conducted:
   - Soft-label regression (MSE, $R^2$)
   - Hard-label classification (Accuracy, F1-score)
 
-Foundation models evaluated:
-
-- [Music2vec](https://arxiv.org/abs/2212.05226)
-- [MusicHuBERT](https://arxiv.org/abs/2306.08850)
-- [MERT](https://arxiv.org/abs/2311.01008)
-
-**Music2vec** achieved the highest overall performance for cross-cultural generalization.
+Foundation models evaluated: 
+- Music2vec, MusicHuBERT, MERT, where **Music2vec** achieved the highest overall performance for cross-cultural generalization.
 
 ---
 
